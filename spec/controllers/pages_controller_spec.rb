@@ -12,7 +12,7 @@ describe PagesController do
 	it "should have the right title" do
 	get 'home'
 	response.should have_selector("title", 
-		:content => "ruby on rails sample application | Home")
+		:content => "")
 
     end
 	it "should have a non-blank body" do
