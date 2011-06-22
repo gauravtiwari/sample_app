@@ -1,0 +1,14 @@
+   <header>
+	<div id="logo">
+		<%= image_tag("logo.png",:alt=>"My sample application",:height=>"100px",:title=>"Rails Sample application", :class=>"round")%>
+		</div>
+	 
+	<nav class="round">
+		<ul>
+			<li><%= button_link_to "Home",'#'%></li>
+			<li><%= button_link_to "About Us",'#'%></li>
+			<li><%= add_button_link_to "Sign in",'#'%></li>
+			<li><%= button_link_to "Help",'#'%></li>
+		</ul>
+	</nav>
+   </header>

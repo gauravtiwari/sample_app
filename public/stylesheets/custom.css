@@ -40,7 +40,17 @@ nav ul
 margin:0;
 padding:0;
 }
+footer {
+width:710px;
+margin-top:10px;
+margin-left:auto;
+margin-right:auto;
 
+}
+footer nav{
+float:none;
+
+}
 section
 {
 margin-top:1em;
