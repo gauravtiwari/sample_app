@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head><title> <%= title %></title></head>
-<%= stylesheet_link_tag 'css3buttons/css3-github-buttons' %>
- <%= stylesheet_link_tag :all %>
-<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-<%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
+ <head>
+  <title> <%= title %></title>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie'%><![endif]>-->
+  	<%= csrf_meta_tag %>
+	<%= css3buttons_stylesheets :include_reset => false %>
+	<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+	<%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
+ 	<%= javascript_include_tag :defaults %>
+<%= stylesheet_link_tag :all %>
+  </head>
 <body>
+<div class="container">
+   <header>
+	<div id="logo">
+		<%= image_tag("logo.png",:alt=>"My sample application",:height=>"100px",:title=>"Rails Sample application", :class=>"round")%>
+		</div>
+	 
+	<nav class="round">
+		<ul>
+			<li><%= button_link_to "Home",'#'%></li>
+			<li><%= button_link_to "About Us",'#'%></li>
+			<li><%= add_button_link_to "Sign in",'#'%></li>
+			<li><%= button_link_to "Help",'#'%></li>
+		</ul>
+	</nav>
+   </header>
+		<section class="round">
+			<%= yield %>
+		</section>
 
-<%= yield %>
-
+</div>
 </body>
 </html>

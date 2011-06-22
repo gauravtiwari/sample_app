@@ -1,0 +1,87 @@
+/*Custom CSS code*/
+
+body
+{
+background:#cff;
+margin:0 auto;
+}
+/*Main container*/
+.container
+{
+width:710px;
+margin:0 auto;
+}
+/*Main container*/
+
+/*Header box*/
+header
+{
+padding:20px;
+}
+#logo
+{
+width:100px;
+padding-left:10px;
+
+}
+
+/*Header box*/
+
+/*Nav box*/
+
+nav{
+float:right;
+white-space:nowrap;
+background:#fff;
+
+}
+nav ul
+{
+margin:0;
+padding:0;
+}
+
+section
+{
+margin-top:1em;
+font-size:120%;
+padding:20px;
+background:#fff;
+
+}
+
+li
+{
+list-style-type:none;
+float:left;
+
+}
+a{
+text-decoration:none;
+}
+a.signup_button
+{
+margin-left:auto;
+margin-right:auto;
+display:block;
+text-decoration:none;
+text-align:center;
+width:190px;
+color:#fff;
+background:#006400;
+font-size:150%;
+font-weight:bold;
+padding:20px;
+}
+.round
+{
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+border-radius:10px;
+}
+
+h1
+{
+
+}
+
