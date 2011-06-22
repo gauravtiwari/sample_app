@@ -4,6 +4,8 @@ gem 'rails', '3.0.9'
 
 gem 'sqlite3'
 
+gem 'css3buttons'
+
 group :development do
 	gem 'rspec-rails'
 	gem 'spork'
