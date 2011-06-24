@@ -17,4 +17,5 @@ group :test do
 	gem 'autotest'
 	gem 'spork'
 	gem 'webrat'
+	gem 'capybara'
 end
